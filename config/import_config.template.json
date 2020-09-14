@@ -1,0 +1,75 @@
+{
+    "app":{
+        "port":"8001",
+        "appDirectory":"/user/Documents/dev_repo/hta_utility_tools",
+        "dataFilePath":"/user/Documents/dev_repo/hta_utility_tools/data/Test_data_period1_districtOuest.csv",
+        "teiInsertBatchSize":5,
+        "programId":"eTkUEzlMDZY",
+        "trackedEntityTypeId":"nN29POeOxvv",
+        "programStages":{
+            "provenancePatient":"UD8R4GcuOsO"
+        }
+    },
+    "dhis2Server":{
+		"url":"http://localhost:8080/api",
+		"username":"admin",
+		"password":"admin"
+        },
+    "programRulesAgeGroup":[
+        {
+            "interval":[20,44],
+            "value":"20-44"
+        },
+        {
+            "interval":[45,54],
+            "value":"45-54"
+        },
+        {
+            "interval":[55,64],
+            "value":"55-64"
+        },
+        {
+            "interval":[65,74],
+            "value":"65-74"
+        },
+        {
+            "interval":[75,84],
+            "value":"75-84"
+        },
+        {
+            "interval":[85,200],
+            "value":"85+"
+        },
+        {
+            "interval":[0,20],
+            "value":"<20"
+        }
+
+    ],
+    "patientRefereOptionSet":[
+        {
+            "code":"campagne",
+            "value":"Campagne de sensibilisation"
+        },
+        {
+            "code":"tierce",
+            "value":"Tierce personne"
+        },
+        {
+            "code":"ocb",
+            "value":"OCB (VAD/Causerie)"
+        },
+        {
+            "code":"programme",
+            "value":"Programme entreprise"
+        },
+        {
+            "code":"pharmacie",
+            "value":"Pharmacie"
+        },
+        {
+            "code":"autre",
+            "value":"Autres (préciser)"
+        }
+    ]
+}

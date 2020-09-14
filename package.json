@@ -1,0 +1,38 @@
+{
+  "name": "hta_utilities_tools",
+  "version": "0.0.1",
+  "description": "Tools for importing data on patient in HTA Tracker and generate indicators. Run on node v10.13.0",
+  "main": "lib/app.js",
+  "scripts": {
+    "start": "node lib/app.js"
+  },
+  "keywords": [
+    "Tracker",
+    "DHIS2"
+  ],
+  "author": "Gerard Bisama",
+  "license": "MPL-2.0",
+  "contributors": [
+    "https://github.com/gerard-bisama"
+  ],
+  "dependencies": {
+    "async": "^3.0.1",
+    "btoa": "^1.2.1",
+    "csvtojson": "^2.0.10",
+    "express": "^4.13.4",
+    "is-json": "^2.0.1",
+    "moment": "^2.24.0",
+    "needle": "^2.4.0",
+    "underscore": "^1.11.0",
+    "urijs": "^1.17.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "onchange": "^2.3.0",
+    "winston": "^3.2.0",
+    "rewire": "^2.5.1",
+    "snazzy": "^3.0.1",
+    "standard": "^6.0.8",
+    "tap": "^5.7.1"
+  }
+}
