@@ -1,14 +1,17 @@
 {
     "app":{
         "port":"8001",
-        "appDirectory":"/user/Documents/dev_repo/hta_utility_tools",
-        "dataFilePath":"/user/Documents/dev_repo/hta_utility_tools/data/Test_data_period1_districtOuest.csv",
-        "teiInsertBatchSize":5,
+        "appDirectory":"/homepath/dev_repo/hta_utility_tools",
+        "dataFilePath":"/homepath/dev_repo/hta_utility_tools/data/data_period2_districtOuest.csv",
+        "teiInsertBatchSize":50,
         "programId":"eTkUEzlMDZY",
         "trackedEntityTypeId":"nN29POeOxvv",
         "programStages":{
-            "provenancePatient":"UD8R4GcuOsO"
-        }
+            "provenancePatient":"UD8R4GcuOsO",
+            "suiviPatient":"xVMoiMMEaqj"
+        },
+        "timeoutDelay":10000,
+        "syncFirstPeriod":false
     },
     "dhis2Server":{
 		"url":"http://localhost:8080/api",
@@ -70,6 +73,16 @@
         {
             "code":"autre",
             "value":"Autres (préciser)"
+        }
+    ],
+    "statutPatientOptionSet":[
+        {
+            "code":"suivi",
+            "value":"Suivi"
+        },
+        {
+            "code":"autre",
+            "value":"Autre (préciser)"
         }
     ]
 }
