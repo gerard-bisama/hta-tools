@@ -1,8 +1,8 @@
 {
     "app":{
         "port":"8001",
-        "appDirectory":"/homepath/dev_repo/hta_utility_tools",
-        "dataFilePath":"/homepath/dev_repo/hta_utility_tools/data/data_period2_districtOuest.csv",
+        "appDirectory":"/home/server-dev/Documents/dev_repo/hta_utility_tools",
+        "dataFilePath":"/home/server-dev/Documents/dev_repo/hta_utility_tools/data/data_period3.csv",
         "teiInsertBatchSize":50,
         "programId":"eTkUEzlMDZY",
         "trackedEntityTypeId":"nN29POeOxvv",
@@ -10,45 +10,56 @@
             "provenancePatient":"UD8R4GcuOsO",
             "suiviPatient":"xVMoiMMEaqj"
         },
-        "timeoutDelay":10000,
+        "orgUnits":{
+            "isParent":false,
+            "pageSizeToPull":2,
+            "OrgUnit":"poe00000138"
+        },
+        "timeoutDelay":5000,
+        "timeoutDelayUpdateTEI":1000,
         "syncFirstPeriod":false
     },
     "dhis2Server":{
 		"url":"http://localhost:8080/api",
-		"username":"admin",
+		"username":"admin  ",
 		"password":"admin"
         },
     "programRulesAgeGroup":[
         {
-            "interval":[20,44],
-            "value":"20-44"
+            "interval":[18,29],
+            "value":"18-29"
         },
         {
-            "interval":[45,54],
-            "value":"45-54"
+            "interval":[30,44],
+            "value":"30-44"
         },
         {
-            "interval":[55,64],
-            "value":"55-64"
+            "interval":[45,59],
+            "value":"45-59"
         },
         {
-            "interval":[65,74],
-            "value":"65-74"
+            "interval":[60,69],
+            "value":"60-69"
         },
         {
-            "interval":[75,84],
-            "value":"75-84"
+            "interval":[70,79],
+            "value":"70-79"
         },
         {
-            "interval":[85,200],
-            "value":"85+"
+            "interval":[80,200],
+            "value":"80+"
         },
         {
-            "interval":[0,20],
-            "value":"<20"
+            "interval":[0,17],
+            "value":"<18"
         }
 
     ],
+    "attributeIds":{
+        "ageAttributeId":"pleUVP7m8LX",
+        "ageGroupAttributeId":"vjNskFa2nwh"
+
+    },
     "patientRefereOptionSet":[
         {
             "code":"campagne",
