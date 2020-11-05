@@ -16,6 +16,7 @@
     "https://github.com/gerard-bisama"
   ],
   "dependencies": {
+    "alasql": "^0.6.4",
     "async": "^3.0.1",
     "btoa": "^1.2.1",
     "csvtojson": "^2.0.10",
