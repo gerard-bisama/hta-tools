@@ -11,17 +11,17 @@
             "suiviPatient":"xVMoiMMEaqj"
         },
         "orgUnits":{
-            "isParent":false,
-            "pageSizeToPull":2,
-            "OrgUnit":"poe00000138"
+            "isParent":true,
+            "pageSizeToPull":50,
+            "OrgUnit":"dist0000100"
         },
-        "timeoutDelay":5000,
-        "timeoutDelayUpdateTEI":1000,
+        "timeoutDelay":0,
+        "timeoutDelayUpdateTEI":0,
         "syncFirstPeriod":false
     },
     "dhis2Server":{
 		"url":"http://localhost:8080/api",
-		"username":"admin  ",
+		"username":"admin",
 		"password":"admin"
         },
     "programRulesAgeGroup":[
@@ -94,6 +94,49 @@
         {
             "code":"autre",
             "value":"Autre (préciser)"
+        }
+    ],
+    "periodDataElementGenerated":{
+        "startDate":"2019-01-01",
+        "endDate":"2019-12-31"
+    },
+    "dataElements2Generate":[
+        {
+            "name":"NewlyDiagnosedByMonth",
+            "queryHeaders":{
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "Sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "DateDiagnosed":{
+                    "index":10,
+                    "header":"DateDiagnosed"
+                }
+            },
+            "queryElement":{
+                "stageId":"UD8R4GcuOsO",
+                "dimensionOrgUnits":[
+                    "dist0000101"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "WfCKF3dicir"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"",
+            "groupBy":[
+                {
+                    "name":""
+                }
+            ]
+
         }
     ]
 }
