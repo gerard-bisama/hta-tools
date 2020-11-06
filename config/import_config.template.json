@@ -13,14 +13,14 @@
         "orgUnits":{
             "isParent":true,
             "pageSizeToPull":50,
-            "OrgUnit":"dist0000100"
+            "OrgUnit":"dist0000102"
         },
         "timeoutDelay":0,
         "timeoutDelayUpdateTEI":0,
         "syncFirstPeriod":false
     },
     "dhis2Server":{
-		"url":"http://localhost:8080/api",
+		"url":"http://localhost/api",
 		"username":"admin",
 		"password":"admin"
         },
@@ -100,6 +100,10 @@
         "startDate":"2019-01-01",
         "endDate":"2019-12-31"
     },
+    "categoryComboCode":{
+        "ageGroupCode":"age_group",
+        "sexCode":"sex"
+    },
     "dataElements2Generate":[
         {
             "name":"NewlyDiagnosedByMonth",
@@ -108,11 +112,11 @@
                     "index":8,
                     "header":"AgeGroup"
                 },
-                "Sex":{
+                "sex":{
                     "index":9,
                     "header":"Sex"
                 },
-                "DateDiagnosed":{
+                "dateDiagnosed":{
                     "index":10,
                     "header":"DateDiagnosed"
                 }
@@ -120,7 +124,7 @@
             "queryElement":{
                 "stageId":"UD8R4GcuOsO",
                 "dimensionOrgUnits":[
-                    "dist0000101"
+                    "dist0000102"
                 ],
                 "dimensionIds":[
                     "vjNskFa2nwh",
@@ -130,7 +134,7 @@
             },
             "id":"",
             "dataSetId":"",
-            "dataElementId":"",
+            "dataElementId":"XVK2zghoU1j",
             "groupBy":[
                 {
                     "name":""
@@ -138,5 +142,57 @@
             ]
 
         }
-    ]
+    ],
+    "categoryOptions": [
+        {
+          "id": "fAiWVLZw3A6",
+          "displayName": "<18"
+        },
+        {
+          "id": "CA9OlrVinSn",
+          "displayName": "18-29"
+        },
+        {
+          "id": "BZybPaHLvEU",
+          "displayName": "30-44"
+        },
+        {
+          "id": "CEXD7tk1KoE",
+          "displayName": "45-59"
+        },
+        {
+          "id": "NFWgxBLKJv5",
+          "displayName": "60-69"
+        },
+        {
+          "id": "RV43xFryDaD",
+          "displayName": "70-79"
+        },
+        {
+          "id": "E7NWxnU04k6",
+          "displayName": "80+"
+        },
+        {
+          "id": "xYerKDKCefk",
+          "displayName": "default"
+        },
+        {
+          "id": "PuWfWBSXbMP",
+          "displayName": "F"
+        },
+        {
+          "id": "rOv3i80wRdt",
+          "displayName": "M"
+        },
+        {
+          "id": "xBLoKaduNcl",
+          "displayName": "unknown_age"
+        },
+        {
+          "id": "CK7jv5V0nm0",
+          "displayName": "unknown_sex"
+        }
+      ]
+    
+    
 }
