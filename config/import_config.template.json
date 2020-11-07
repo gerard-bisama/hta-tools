@@ -57,7 +57,8 @@
     ],
     "attributeIds":{
         "ageAttributeId":"pleUVP7m8LX",
-        "ageGroupAttributeId":"vjNskFa2nwh"
+        "ageGroupAttributeId":"vjNskFa2nwh",
+        "uuidAttributeId":"SMLeL7kXzf4"
 
     },
     "patientRefereOptionSet":[
