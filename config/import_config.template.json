@@ -109,6 +109,10 @@
         {
             "name":"NewlyDiagnosedByMonth",
             "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
                 "ageGroup":{
                     "index":8,
                     "header":"AgeGroup"
@@ -120,6 +124,10 @@
                 "dateDiagnosed":{
                     "index":10,
                     "header":"DateDiagnosed"
+                },
+                "uuid":{
+                    "index":"11",
+                    "header":"uuid"
                 }
             },
             "queryElement":{
@@ -130,18 +138,53 @@
                 "dimensionIds":[
                     "vjNskFa2nwh",
                     "iYMDdwJ0Kzk",
-                    "WfCKF3dicir"
+                    "WfCKF3dicir",
+                    "SMLeL7kXzf4"
                 ]
             },
             "id":"",
             "dataSetId":"",
-            "dataElementId":"XVK2zghoU1j",
-            "groupBy":[
-                {
-                    "name":""
+            "dataElementId":"XVK2zghoU1j"
+        },
+        {
+            "name":"NewlyTreatedByMonth",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "dateVisite":{
+                    "index":10,
+                    "header":"DateVisite"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
                 }
-            ]
-
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000102"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "G9wQG7w9GqF",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"cTEcBaXuTqp"
         }
     ],
     "categoryOptions": [
