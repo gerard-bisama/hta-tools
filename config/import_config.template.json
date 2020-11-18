@@ -2,7 +2,7 @@
     "app":{
         "port":"8001",
         "appDirectory":"/home/server-dev/Documents/dev_repo/hta_utility_tools",
-        "dataFilePath":"/home/server-dev/Documents/dev_repo/hta_utility_tools/data/data_period3.csv",
+        "dataFilePath":"/home/server-dev/Documents/dev_repo/hta_utility_tools/data",
         "teiInsertBatchSize":50,
         "programId":"eTkUEzlMDZY",
         "trackedEntityTypeId":"nN29POeOxvv",
@@ -20,7 +20,7 @@
         "syncFirstPeriod":false
     },
     "dhis2Server":{
-		"url":"http://localhost/api",
+		"url":"http://localhost",
 		"username":"admin",
 		"password":"admin"
         },
@@ -357,6 +357,16 @@
             "id":"",
             "dataSetId":"",
             "dataElementId":"t60rJvEWiqv"
+        },
+        {
+            "name":"totalScreenedByMonth",
+            "queryHeaders":{
+            },
+            "queryElement":{
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"jB7ixkYVKD4"
         }
         
     ],
