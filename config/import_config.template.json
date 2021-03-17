@@ -17,10 +17,11 @@
         },
         "timeoutDelay":0,
         "timeoutDelayUpdateTEI":0,
-        "syncFirstPeriod":false
+        "syncFirstPeriod":false,
+        "value2Generate":0
     },
     "dhis2Server":{
-		"url":"http://localhost",
+		"url":"http://localhost/api",
 		"username":"admin",
 		"password":"admin"
         },
@@ -147,6 +148,86 @@
             "dataElementId":"XVK2zghoU1j"
         },
         {
+            "name":"cumulativeDiagnosedByMonth",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "dateDiagnosed":{
+                    "index":10,
+                    "header":"DateDiagnosed"
+                },
+                "uuid":{
+                    "index":"11",
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"UD8R4GcuOsO",
+                "dimensionOrgUnits":[
+                    "dist0000102"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "WfCKF3dicir",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"XVK2zghoU1j"
+        },
+        {
+            "name":"NewlyDiagnosedPerQuarter",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "dateDiagnosed":{
+                    "index":10,
+                    "header":"DateDiagnosed"
+                },
+                "uuid":{
+                    "index":"11",
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"UD8R4GcuOsO",
+                "dimensionOrgUnits":[
+                    "dist0000102"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "WfCKF3dicir",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"OXK79jgCgp1"
+        },
+        {
             "name":"NewlyTreatedByMonth",
             "queryHeaders":{
                 "psi":{
@@ -192,6 +273,51 @@
             "dataElementId":"cTEcBaXuTqp"
         },
         {
+            "name":"NewlyTreatedPerQuarter",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "dateVisite":{
+                    "index":10,
+                    "header":"DateVisite"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                },
+                "traitement":{
+                    "index":12,
+                    "header":"traitement"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000102"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "G9wQG7w9GqF",
+                    "SMLeL7kXzf4",
+                    "wDk1IkO7kXQ"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"zgRepdSUwio"
+        },
+        {
             "name":"patientWithControledBPMonth",
             "queryHeaders":{
                 "psi":{
@@ -222,7 +348,7 @@
             "queryElement":{
                 "stageId":"xVMoiMMEaqj",
                 "dimensionOrgUnits":[
-                    "dist0000103"
+                    "dist0000102"
                 ],
                 "dimensionIds":[
                     "vjNskFa2nwh",
@@ -235,6 +361,51 @@
             "id":"",
             "dataSetId":"",
             "dataElementId":"eL42nAWLMS6"
+        },
+        {
+            "name":"patientWithControledBPQuarter",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "paControle":{
+                    "index":10,
+                    "header":"paControle"
+                },
+                "dateVisite":{
+                    "index":11,
+                    "header":"dateVisite"
+                },
+                "uuid":{
+                    "index":12,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000102"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "rrKGcWkFGv5:EQ:1",
+                    "G9wQG7w9GqF",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"EbCiz67augY"
         },
         {
             "name":"patientFollowUpByMonth",
@@ -275,6 +446,238 @@
             "id":"",
             "dataSetId":"",
             "dataElementId":"hghQjNtYfNP"
+        },
+        {
+            "name":"sbpBaseLine",
+            "period":{
+                "startDate":"2018-01-01",
+                "endDate":"2019-12-31"
+            },
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "eventDate":{
+                    "index":2,
+                    "header":"eventDate"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "moySyst":{
+                    "index":10,
+                    "header":"moySyst"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000103"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "iU1pq8kluwL",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"cWnlEGWkyFU"
+        },
+        {
+            "name":"sbpBaseLineChange",
+            "period":{
+                "startDate":"2018-01-01",
+                "endDate":"2019-12-31"
+            },
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "eventDate":{
+                    "index":2,
+                    "header":"eventDate"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "moySyst":{
+                    "index":10,
+                    "header":"moySyst"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000103"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "iU1pq8kluwL",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"psmseFAKqpc"
+        },
+        {
+            "name":"sbpLastVisit",
+            "period":{
+                "startDate":"2018-01-01",
+                "endDate":"2019-12-31"
+            },
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "eventDate":{
+                    "index":2,
+                    "header":"eventDate"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "moySyst":{
+                    "index":10,
+                    "header":"moySyst"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000101"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "iU1pq8kluwL",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"Wy7zfno3bxl"
+        },
+        {
+            "name":"sbpLastVisitChange",
+            "period":{
+                "startDate":"2018-01-01",
+                "endDate":"2019-12-31"
+            },
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "eventDate":{
+                    "index":2,
+                    "header":"eventDate"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "moySyst":{
+                    "index":10,
+                    "header":"moySyst"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000103"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "iU1pq8kluwL",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"iWQSb7cQM6J"
+        },
+        {
+            "name":"patientFollowUpPerQuarter",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "dateVisite":{
+                    "index":10,
+                    "header":"DateVisite"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000102"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "G9wQG7w9GqF",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"IP7wwx9n3yi"
         },
         {
             "name":"patientWithDocumentedSyst",
@@ -357,6 +760,46 @@
             "id":"",
             "dataSetId":"",
             "dataElementId":"t60rJvEWiqv"
+        },
+        {
+            "name":"patientDocumentedDiagnosedPerQuater",
+            "queryHeaders":{
+                "psi":{
+                    "index":0,
+                    "header":"psi"
+                },
+                "ageGroup":{
+                    "index":8,
+                    "header":"AgeGroup"
+                },
+                "sex":{
+                    "index":9,
+                    "header":"Sex"
+                },
+                "dateVisite":{
+                    "index":10,
+                    "header":"DateVisite"
+                },
+                "uuid":{
+                    "index":11,
+                    "header":"uuid"
+                }
+            },
+            "queryElement":{
+                "stageId":"xVMoiMMEaqj",
+                "dimensionOrgUnits":[
+                    "dist0000100"
+                ],
+                "dimensionIds":[
+                    "vjNskFa2nwh",
+                    "iYMDdwJ0Kzk",
+                    "G9wQG7w9GqF",
+                    "SMLeL7kXzf4"
+                ]
+            },
+            "id":"",
+            "dataSetId":"",
+            "dataElementId":"Vkmb7wB0UBT"
         },
         {
             "name":"totalScreenedByMonth",
